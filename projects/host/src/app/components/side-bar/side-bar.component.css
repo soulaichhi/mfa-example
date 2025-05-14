@@ -1,0 +1,74 @@
+.sidebar {
+  width: 260px;
+  background-color: #0f172a; /* Darker sidebar (e.g., Slate 900) */
+  color: #e2e8f0; /* Light text color for sidebar (e.g., Slate 300) */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0; /* Prevent sidebar from shrinking */
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  height: 100%;
+}
+.sidebar-header {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #1e293b; /* Border color (e.g., Slate 800) */
+}
+
+.sidebar-header h2 {
+  margin: 0;
+  font-size: 1.6em;
+  color: #f8fafc; /* White text for header (e.g., Slate 50) */
+  text-align: center;
+  font-weight: 600;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-nav li a {
+  display: flex; /* Align icon and text if icons were present */
+  align-items: center;
+  padding: 12px 15px;
+  color: #94a3b8; /* Muted nav item color (e.g., Slate 400) */
+  text-decoration: none;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  font-weight: 500;
+}
+
+.sidebar-nav li a:hover,
+.sidebar-nav li a.active {
+  background-color: #1e293b; /* Hover/active background (e.g., Slate 800) */
+  color: #f1f5f9; /* Hover/active text color (e.g., Slate 100) */
+}
+
+.sidebar-footer {
+  margin-top: auto; /* Pushes footer to the bottom */
+  padding-top: 20px;
+  border-top: 1px solid #1e293b; /* Border color (e.g., Slate 800) */
+  font-size: 0.85em;
+  text-align: center;
+  color: #64748b; /* Muted footer text (e.g., Slate 500) */
+}
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%; /* Full width for sidebar */
+    height: auto; /* Auto height for sidebar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+  }
+
+  .sidebar-header h2 {
+    text-align: left;
+    font-size: 1.4em;
+  }
+
+  .sidebar-nav li a {
+    padding: 10px 12px;
+  }
+}

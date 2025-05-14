@@ -1,0 +1,22 @@
+.dashboard-container {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Prevent scrollbars on the container itself if content fits */
+  width: 100%;
+}
+:host {
+  app-side-bar {
+    height: 100%;
+  }
+  app-main {
+    width: 100%;
+    height: 100%;
+  }
+}
+/* Basic responsive adjustments */
+@media (max-width: 768px) {
+  .dashboard-container {
+    flex-direction: column; /* Stack sidebar and main content on small screens */
+    height: auto; /* Allow content to determine height */
+  }
+}

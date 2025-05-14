@@ -1,0 +1,35 @@
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #cbd5e1; /* Light border (e.g., Slate 300) */
+}
+
+.main-header h1 {
+  margin: 0;
+  font-size: 1.8em;
+  color: #1e293b; /* Dark color for main heading (e.g., Slate 800) */
+  font-weight: 600;
+}
+.user-profile {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  color: #334155; /* User profile text color (e.g., Slate 700) */
+}
+.user-profile span {
+  margin-right: 10px;
+}
+.user-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #cbd5e1; /* Placeholder avatar color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #0f172a;
+}
